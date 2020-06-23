@@ -1,0 +1,8 @@
+<div class="container">
+  <h1><%= @post.title %></h1>
+  <%= link_to "edit", edit_post_path %>
+  <%= link_to "delete", @post, method: :delete, data: { comfirm: "Don't regret."} %>
+  <div class="line"></div>
+  <p><strong>Description:</strong> <%= @post.details %></p>
+  <p><strong>Views:</strong> <%= @post.views %></p>
+</div>

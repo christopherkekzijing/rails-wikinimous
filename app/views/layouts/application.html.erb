@@ -10,6 +10,14 @@
   </head>
 
   <body>
+    <div class="nav">
+      <div class="container">
+        <div class="row justify-content-between">
+          <h3><%= link_to "Wiki",posts_path%></h3>
+          <%= link_to "New article", new_post_path %>
+        </div>
+      </div>
+    </div>
     <%= yield %>
   </body>
 </html>

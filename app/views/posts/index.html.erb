@@ -1,0 +1,12 @@
+<div class="container">
+  <ul>
+    <% @sort_post.each do |post|%>
+    <li class="list-style">
+    <h2><%= link_to post.title, post_path(post)%></h2>
+    <%= post.details %>
+    </li>
+
+    <% end %>
+  </ul>
+</div>
+
