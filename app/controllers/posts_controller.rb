@@ -12,7 +12,8 @@ class PostsController < ApplicationController
     # raise
     # set_post
     # raise
-    # @post.views += 1
+    @post.views += 1
+    @post.save!
     # @post.update(set_post)
     # redirect_to posts_path
   end
